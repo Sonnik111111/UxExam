@@ -73,13 +73,13 @@ chart.render();
 /*------bar---------*/
 var options = {
   series: [{
-    name: "Series A",
+    name: "Automatic",
     data: [44, 55, 41, 67, 22, 43, 36, 52, 24, 18, 36, 48]
   }, {
-    name: "Series B",
+    name: "Average",
     data: [13, 23, 20, 8, 13, 27, 18, 22, 10, 16, 24, 22]
   }, {
-    name: "Series C",
+    name: "Manual",
     data: [11, 17, 15, 15, 21, 14, 11, 18, 17, 12, 20, 18]
   }],
   colors: ["#556ee6", "#f1b44c", "#34c38f"],
