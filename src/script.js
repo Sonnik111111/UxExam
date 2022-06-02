@@ -44,7 +44,7 @@ var options = {
 };
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
-var options = {
+var options2 = {
   series: [{
     name: "Automatic",
     data: [44, 55, 41, 67, 22, 43, 36, 52, 24, 18, 36, 48]
@@ -110,5 +110,5 @@ var options = {
     offsetX: 40
   }
 };
-var bars = new ApexCharts(document.querySelector("#bars"), options);
+var bars = new ApexCharts(document.querySelector("#bars"), options2);
 bars.render();
