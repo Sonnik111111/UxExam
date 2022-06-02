@@ -1,4 +1,3 @@
-/*------cricle---------*/
 var options = {
   series: [67],
   chart: {
@@ -16,61 +15,35 @@ var options = {
           color: '#b6b6b6',
           offsetY: 70
         },
-
         value: {
           offsetY: 30,
           fontSize: '22px',
           color: '#b6b6b6',
-          formatter: function(val) {
+          formatter: function (val) {
             return val + "%";
           }
-
         }
-
       }
-
     }
-
   },
-
   fill: {
-
     type: 'gradient',
-
     gradient: {
-
       shade: 'dark',
-
       shadeIntensity: 0.15,
-
       inverseColors: false,
-
       opacityFrom: 1,
-
       opacityTo: 1,
-
       stops: [0, 50, 65, 91]
-
     },
-
   },
-
   stroke: {
-
     dashArray: 4
-
   },
-
-  labels: ['Weak 4'],
-
+  labels: ['Week 4'],
 };
-
-
-
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
-/*------cricle---------*/
-/*------bar---------*/
 var options = {
   series: [{
     name: "Automatic",
@@ -111,7 +84,7 @@ var options = {
   xaxis: {
     categories: ['Jun', 'Feb', 'Mar', 'April', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     labels: {
-      formatter: function(val) {
+      formatter: function (val) {
         return val + " "
       }
     }
@@ -123,7 +96,7 @@ var options = {
   },
   tooltip: {
     y: {
-      formatter: function(val) {
+      formatter: function (val) {
         return val + "K"
       }
     }
@@ -137,42 +110,5 @@ var options = {
     offsetX: 40
   }
 };
-
 var bars = new ApexCharts(document.querySelector("#bars"), options);
 bars.render();
-/*------bar---------*/
-
-
-
-/*------loc---------*/
-
-var options = {
-  series: [14, 23, 21],
-  chart: {
-    type: 'polarArea',
-  },
-  stroke: {
-    colors: ['#fff']
-  },
-  fill: {
-    opacity: 0.8
-  },
-  responsive: [{
-    breakpoint: 480,
-    options: {
-      chart: {
-        width: 200
-      },
-      legend: {
-        position: 'bottom'
-      }
-    }
-  }]
-};
-
-var loac = new ApexCharts(document.querySelector("#loac"), options);
-loac.render();
-
-
-
-/*------loc---------*/

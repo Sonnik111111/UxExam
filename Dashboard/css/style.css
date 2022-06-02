@@ -1,179 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background: #F8F8FB;
+  background: #f8f8fb;
   font-family: 'Poppins', sans-serif;
 }
-
 .container {
   max-width: 80%;
   margin: auto;
 }
-
 .flex {
   display: flex;
 }
-
 .flex1 {
   display: flex;
   justify-content: space-between;
 }
-
 a {
   text-decoration: none;
   color: black;
 }
-
 ul {
   list-style: none;
 }
-
-/*-------------head-------------*/
 .head .container {
   padding: 5px 0 5px 0;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
-
 .head {
   background: #2e5dea;
 }
-
 header .logo img {
   width: 200px;
   margin-right: 10px;
   margin-top: 5px;
 }
-
 header .search {
-  background: #ffffff;
+  background: #fff;
   padding: 10px;
   width: 200px;
   border-radius: 30px;
- 
 }
-
-
-
 header input {
   width: 100%;
   padding: 2px;
-  outline: none;
-  background: none;
-  border: none;
+  outline: 0;
+  background: 0;
+  border: 0;
   margin-left: 10px;
 }
-
 ::placeholder {
-  color: rgb(0, 0, 0);
+  color: #000;
   opacity: 0.7;
   font-weight: 500;
   letter-spacing: 2px;
 }
-
-
 .head .right span {
   margin-left: 30px;
   margin-top: 10px;
   opacity: 0.8;
 }
-
 .head .right .img {
   height: 30px;
   margin-top: 10px;
 }
-
 .head .admin .text {
   margin-left: 10px;
   margin-top: 8px;
   opacity: 0.8;
 }
-
 .head .admin label {
   font-size: 15px;
 }
-
 .head .admin img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 4px solid #5F6471;
+  border: 4px solid #5f6471;
   margin-left: 20px;
 }
-
 .head .admin i {
   font-size: 12px;
   margin-top: 6px;
   margin-left: 5px;
 }
-
-/*-------------head end-------------*/
-/*-------------menu-------------*/
 .menu {
   background: white;
   color: #616778;
-  
 }
-
 .menu .container {
   padding: 15px 0 15px 0;
 }
-
 .hov {
-  color: #557AEB;
+  color: #557aeb;
 }
-
 .navbar {
   display: flex;
 }
-
 nav {
   flex: 1;
 }
-
 nav ul {
   display: inline-block;
 }
-
 nav a {
-  color: #000000;
+  color: #000;
   font-size: 15px;
   transition: 0.5s;
   display: flex;
 }
-
 nav h5 {
   font-weight: 500;
   font-size: 17px;
   margin: 0 10px 0 10px;
 }
-
 nav a i {
   font-size: 12px;
   margin-top: 5px;
 }
-
 nav a:hover {
-  color: #557AEB;
+  color: #557aeb;
 }
-
 nav .material-icons {
   font-size: 18px;
   margin: 0;
   padding: 0;
 }
-
 nav ul li {
   display: inline-block;
   margin-right: 50px;
   font-family: sans-serif;
 }
-
 .navbar label {
   text-align: center;
   font-size: 20px;
@@ -185,7 +145,6 @@ nav ul li {
   background: black;
   border-radius: 50%;
 }
-
 header.sticky {
   z-index: 10;
   position: fixed;
@@ -195,18 +154,15 @@ header.sticky {
   height: 10vh;
   transition: 0.5s;
 }
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: 90%;
     margin: auto;
   }
-
   .menu {
-    background: none;
+    background: 0;
     box-shadow: none;
   }
-
   nav ul {
     position: absolute;
     top: 65px;
@@ -219,17 +175,14 @@ header.sticky {
     height: 30vh;
     padding: 0 0 0 50px;
   }
-
   nav ul li {
     display: block;
     margin-top: 30px;
   }
-
   .navbar label {
     display: block;
     cursor: pointer;
   }
-
   .head .right span:nth-child(2),
   .head .right span:nth-child(3),
   .head .right .text,
@@ -238,50 +191,35 @@ header.sticky {
   header .search {
     display: none;
   }
-
   header .navbar label {
     position: absolute;
     left: 25%;
     top: 22px;
   }
-
   header {
     position: relative;
   }
-
-  /*
-  header.sticky {
-    position: relative;
-  }*/
 }
-
-/*-------------header end-------------*/
-/*-------------home-------------*/
 .home {
   margin-top: 20px;
 }
-
 .home .heading h3 {
-  color: #000000;
+  color: #000;
   font-weight: 500;
   font-size: 15px;
 }
-
 .content_left {
   width: 32%;
   margin-top: 20px;
 }
-
 .content_right {
   width: 67%;
   margin-top: 20px;
 }
-
 .home .top {
   background: white;
   border-radius: 10px;
 }
-
 .home .wlecome {
   border-radius: 10px 10px 0 0;
   background: #2e5dea;
@@ -289,23 +227,19 @@ header.sticky {
   position: relative;
   height: 110px;
 }
-
 .home h3 {
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
-
 .home label {
-  color: #000000;
+  color: #000;
   font-size: 15px;
 }
-
 .profile {
   padding: 20px;
   position: relative;
   box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
 }
-
 .home .box img {
   width: 80px;
   height: 80px;
@@ -314,164 +248,124 @@ header.sticky {
   position: absolute;
   top: -20%;
 }
-
 .home .box .text {
   margin-top: 50px;
 }
-
 .profile p {
   margin-top: 15px;
 }
-
 button {
-  background: #556EE6;
-  border: none;
-  outline: none;
+  background: #556ee6;
+  border: 0;
+  outline: 0;
   color: white;
   padding: 8px 15px;
   border-radius: 5px;
 }
-
 .profile button {
   margin-top: 10px;
 }
-
 .WeightG {
   background: white;
   margin-top: 30px;
   border-radius: 10px;
   padding: 20px;
 }
-
 .WeightG h3 {
   color: black;
   margin-bottom: 30px;
 }
-
 .WeightG h2 {
   margin-top: 15px;
   font-weight: 500;
 }
-
 .WeightG p {
   font-size: 14px;
 }
-
 .WeightG span {
   color: green;
 }
-
 .WeightG button {
   margin: 20px 0 10px 0;
 }
-
 .WeightG .box {
   width: 50%;
 }
-
-/*---- -content_right-- ---*/
 .content_right {
   margin-left: 30px;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
-
 .rbox {
   background: white;
   padding: 20px;
   box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
 }
-
 .content_right h4 {
   font-size: 15px;
   font-weight: 400;
 }
-
 .rbox h2 {
   font-weight: 400;
   margin-top: 10px;
 }
-
 .rbox span {
-  background: #556EE6;
+  background: #556ee6;
   color: white;
   padding: 10px;
   border-radius: 50%;
   margin-top: 15px;
 }
-
 .bar {
- 
   background: white;
   margin-top: 20px;
   padding: 20px;
 }
-
 .bar h5 {
   font-size: 16px;
   font-weight: 500;
 }
-
 .bar h4 {
   margin: 5px 20px 0 20px;
 }
-
-/*---- -content_right-- ---*/
-/*-------------home-------------*/
-
-/*-------------pagination-------------*/
-
-
 .pagination {
   margin-top: 30px;
   text-align: center;
 }
-
 .pagination ul {
   display: inline-block;
 }
-
 .pagination ul li {
   display: inline-block;
   margin-right: 30px;
 }
-
 .pagination .active {
   width: 40px;
   height: 40px;
-  background: #556EE6;
+  background: #556ee6;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
   color: white;
 }
-
-/*-------------table-------------*/
-/*-------------footer-------------*/
 footer {
   padding: 30px 0 30px 0;
 }
-
-/*-------------footer-------------*/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .home .content {
     flex-direction: column;
   }
-
   .content_right,
   .content_left {
     width: 100%;
     margin-left: 0;
   }
-
   .wrapper .grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
   .wrapper button {
     margin-top: 20px;
   }
